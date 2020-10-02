@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url = 'https://packages.confluent.io/maven/'
+    }
+}
+
+dependencies {
+    implementation project(':avro-model')
+    implementation "org.apache.avro:avro:1.10.0"
+
+    implementation "io.confluent:kafka-avro-serializer:${cpVersion}"
+    implementation "io.confluent:kafka-schema-registry-client:${cpVersion}"
+}

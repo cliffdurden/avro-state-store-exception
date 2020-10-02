@@ -1,0 +1,16 @@
+# Project exclude paths
+/.gradle/
+/avro-model/build/
+/avro-model/build/classes/
+/avro-model/build/classes/java/main/
+/avro-model/build/libs/
+/avro-model/build/tmp/
+/build/
+/build/libs/
+/build/tmp/
+/consumer-app/build/
+/consumer-app/build/classes/java/main/
+/dummy-producer/build/
+/dummy-producer/build/classes/java/main/
+/.idea/
+/.settings/

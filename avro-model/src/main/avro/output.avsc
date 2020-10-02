@@ -1,0 +1,33 @@
+{
+  "namespace": "com.github.cliffdurden",
+  "type": "record",
+  "name": "OutputAvro",
+  "fields": [
+    {
+      "name": "sum1",
+      "type": [
+        "null",
+        {
+          "type": "bytes",
+          "logicalType": "decimal",
+          "precision": 3,
+          "scale": 2
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "sum2",
+      "type": [
+        "null",
+        {
+          "type": "bytes",
+          "logicalType": "decimal",
+          "precision": 3,
+          "scale": 2
+        }
+      ],
+      "default": null
+    }
+  ]
+}

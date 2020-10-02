@@ -1,0 +1,20 @@
+plugins {
+    id "com.commercehub.gradle.plugin.avro" version "0.21.0"
+}
+
+group 'com.github.cliffdurden'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+avro {
+    fieldVisibility = "PRIVATE"
+    createSetters = false
+}
+
+dependencies {
+    implementation "org.apache.avro:avro:1.10.0"
+}

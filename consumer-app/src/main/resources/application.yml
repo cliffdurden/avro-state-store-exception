@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: avro-state-store-exception-example-app
+  cloud:
+    stream:
+      function:
+        definition: processStream
+      bindings:
+        processStream-in-0:
+          destination: input1-topic-name
+          content-type: application/*+avro
+        processStream-in-1:
+          destination: input2-topic-name
+          content-type: application/*+avro
+        processStream-out-0:
+          destination: output-topic-name
+          content-type: application/*+avro
+
+      kafka:
+        streams:
+          binder:
+            configuration:
+              default:
+                key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+                value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+              schema.registry.url: "http://localhost:8081"
+            brokers: "localhost:9092"

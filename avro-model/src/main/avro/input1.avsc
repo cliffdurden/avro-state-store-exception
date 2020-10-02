@@ -1,0 +1,16 @@
+{
+ "namespace": "com.github.cliffdurden",
+ "type": "record",
+ "name": "Input1Avro",
+ "fields": [
+    {
+      "name": "sum",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 3,
+        "scale": 0
+      }
+    }
+ ]
+}
