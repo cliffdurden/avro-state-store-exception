@@ -10,7 +10,7 @@ import java.util.*;
 
 public class DummyProducerApp {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Properties properties = new Properties();
         properties.setProperty("bootstrap.servers", "localhost:9092");
         properties.setProperty("acks", "0");
