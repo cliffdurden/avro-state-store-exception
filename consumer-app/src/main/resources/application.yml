@@ -23,5 +23,6 @@ spring:
               default:
                 key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
                 value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                production.exception.handler: com.github.cliffdurden.avro.statestore.exception.app.configuration.LogAndContinueProductionExceptionHandler
               schema.registry.url: "http://localhost:8081"
             brokers: "localhost:9092"
